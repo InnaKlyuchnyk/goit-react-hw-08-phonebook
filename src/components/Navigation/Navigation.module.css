@@ -1,0 +1,30 @@
+.header{
+    padding: 28px;
+    border-bottom: 1px solid black;
+}
+
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    padding: 12px;
+    
+}
+
+.link {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    text-decoration: none;
+
+}
+
+.activeLink {
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px;
+}
