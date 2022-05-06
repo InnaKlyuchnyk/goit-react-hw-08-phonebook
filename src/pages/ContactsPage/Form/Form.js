@@ -1,5 +1,5 @@
 import styles from './Form.module.css';
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 // import {
 //   useCreateContactMutation,
 //   useGetContactsQuery,
@@ -16,6 +16,7 @@ function Form() {
     const name = form.elements.name.value;
     const phone = form.elements.number.value;
     const newContact = { name, phone };
+    console.log(newContact);
 
     // if (
     //   !data.find(contact => contact.name.toLowerCase() === name.toLowerCase())
