@@ -5,6 +5,7 @@ import toast from 'react-hot-toast';
 
 function ContactsListItem({ contact }) {
   const dispatch = useDispatch();
+
   return (
     <li className={styles.listItem}>
       <span className={styles.contactName}>{contact.name}:</span>

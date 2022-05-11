@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-// import contactsSelectors from '../../redux/contacts/contactsSelectors';
 import contactsOperations from '../../redux/contacts/contactsOperations';
 import { useSelector } from 'react-redux';
 import Form from './Form';
@@ -16,8 +15,9 @@ function ContactsPage() {
     function dispatchContacts() {
       dispatch(contactsOperations.fetchContacts());
     }
+
     dispatchContacts();
-  });
+  }, [dispatch]);
 
   return (
     <main>
