@@ -1,3 +1,7 @@
+.container {
+    padding-left: 28px;
+}
+
 .label {
     font-weight: 500;
 }

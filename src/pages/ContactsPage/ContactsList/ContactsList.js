@@ -14,11 +14,13 @@ function ContactsList() {
   };
 
   return (
-    <ul className={styles.list}>
-      {getFilteredNames().map(contact => (
-        <ContactsListItem key={contact.id} contact={contact} />
-      ))}
-    </ul>
+    <div className={styles.container}>
+      <ul className={styles.list}>
+        {getFilteredNames().map(contact => (
+          <ContactsListItem key={contact.id} contact={contact} />
+        ))}
+      </ul>
+    </div>
   );
 }
 

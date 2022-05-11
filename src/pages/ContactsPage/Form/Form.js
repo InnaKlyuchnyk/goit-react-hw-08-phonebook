@@ -20,14 +20,13 @@ function Form() {
       dispatch(contactsOperations.addContact({ name, number }));
       toast.success('New contact is added');
     } else {
-      alert(`${name} is already in contacts`);
       toast.error(`${name} is already in contacts`);
     }
     form.reset();
   };
 
   return (
-    <main className={styles.container}>
+    <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <label className={styles.label}>
           {' '}
@@ -58,7 +57,7 @@ function Form() {
           Add contact
         </button>
       </form>
-    </main>
+    </div>
   );
 }
 

@@ -21,14 +21,16 @@ function Navigation() {
             >
               Home
             </NavLink>
-            <NavLink
-              to="/contacts"
-              className={({ isActive }) =>
-                isActive ? styles.activeLink : styles.link
-              }
-            >
-              Contacts
-            </NavLink>
+            {isLoggedIn && (
+              <NavLink
+                to="/contacts"
+                className={({ isActive }) =>
+                  isActive ? styles.activeLink : styles.link
+                }
+              >
+                Contacts
+              </NavLink>
+            )}
           </div>
 
           {isLoggedIn ? (
