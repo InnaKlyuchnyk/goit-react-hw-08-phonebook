@@ -66,7 +66,7 @@ function RegisterPage() {
           Password
           <input
             className={styles.input}
-            type="text"
+            type="password"
             name="password"
             required
             onChange={handleChange}
