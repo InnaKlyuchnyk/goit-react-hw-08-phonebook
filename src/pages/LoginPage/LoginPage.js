@@ -50,7 +50,7 @@ function LoginPage() {
           Password
           <input
             className={styles.input}
-            type="text"
+            type="password"
             name="password"
             required
             onChange={handleChange}

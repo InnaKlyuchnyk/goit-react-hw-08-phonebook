@@ -27,7 +27,7 @@ function Form() {
 
   return (
     <div className={styles.container}>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={styles.label}>
           {' '}
           Name
