@@ -17,13 +17,16 @@ const authSlice = createSlice({
       state.token = action.payload.token;
       state.isLoggedIn = true;
     },
-    // [authOperations.register.rejected](state, action) {
-
-    // },
+    [authOperations.register.rejected](state) {
+      state = null;
+    },
     [authOperations.logIn.fulfilled](state, action) {
       state.user = action.payload.user;
       state.token = action.payload.token;
       state.isLoggedIn = true;
+    },
+    [authOperations.logIn.rejected](state) {
+      state = null;
     },
     [authOperations.logOut.fulfilled](state) {
       state.user = { name: null, email: null };
