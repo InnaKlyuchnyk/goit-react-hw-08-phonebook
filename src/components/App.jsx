@@ -26,8 +26,6 @@ export const App = () => {
       <>
         <Routes>
           <Route path="/" element={<Navigation />}>
-            {/* <Route path="/" element={<HomePage />} /> */}
-
             <Route
               path="/"
               element={
@@ -40,7 +38,7 @@ export const App = () => {
             <Route
               path="/contacts"
               element={
-                <PrivateRoute>
+                <PrivateRoute navigateTo="/login">
                   <ContactsPage />
                 </PrivateRoute>
               }
@@ -62,6 +60,12 @@ export const App = () => {
               }
             />
           </Route>
+          <Route
+            path="*"
+            element={
+              <PublicRoute restricted navigateTo="/contacts"></PublicRoute>
+            }
+          />
         </Routes>
         <Toaster />
       </>
